@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A45FFCAE2B5BD35800592E28 /* NetworkCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FFCAD2B5BD35800592E28 /* NetworkCallApp.swift */; };
+		A407B6852B5CCFDF008405B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407B6842B5CCFDF008405B6 /* User.swift */; };
+		A407B6872B5CD0BA008405B6 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407B6862B5CD0BA008405B6 /* UserAPI.swift */; };
+		A407B6892B5CD20D008405B6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407B6882B5CD20D008405B6 /* UserViewModel.swift */; };
 		A45FFCB02B5BD35800592E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FFCAF2B5BD35800592E28 /* ContentView.swift */; };
 		A45FFCB22B5BD35F00592E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45FFCB12B5BD35F00592E28 /* Assets.xcassets */; };
 		A45FFCB52B5BD35F00592E28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45FFCB42B5BD35F00592E28 /* Preview Assets.xcassets */; };
+		A4C4722D2B5CD5AE00A5ADFE /* NetworkCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4722C2B5CD5AE00A5ADFE /* NetworkCallApp.swift */; };
+		A4C4722F2B5CD65600A5ADFE /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4722E2B5CD65600A5ADFE /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A407B6842B5CCFDF008405B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A407B6862B5CD0BA008405B6 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		A407B6882B5CD20D008405B6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A45FFCAA2B5BD35800592E28 /* NetworkCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45FFCAD2B5BD35800592E28 /* NetworkCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallApp.swift; sourceTree = "<group>"; };
 		A45FFCAF2B5BD35800592E28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A45FFCB12B5BD35F00592E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45FFCB42B5BD35F00592E28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4C4722C2B5CD5AE00A5ADFE /* NetworkCallApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCallApp.swift; sourceTree = "<group>"; };
+		A4C4722E2B5CD65600A5ADFE /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A407B68A2B5CD499008405B6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A407B6882B5CD20D008405B6 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A407B68B2B5CD4A0008405B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A407B6842B5CCFDF008405B6 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A43D43902B5CD4C700D5610D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A407B6862B5CD0BA008405B6 /* UserAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A43D43912B5CD4D000D5610D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A45FFCAF2B5BD35800592E28 /* ContentView.swift */,
+				A4C4722E2B5CD65600A5ADFE /* UserDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A45FFCA12B5BD35800592E28 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +92,11 @@
 		A45FFCAC2B5BD35800592E28 /* NetworkCall */ = {
 			isa = PBXGroup;
 			children = (
-				A45FFCAD2B5BD35800592E28 /* NetworkCallApp.swift */,
-				A45FFCAF2B5BD35800592E28 /* ContentView.swift */,
+				A4C4722C2B5CD5AE00A5ADFE /* NetworkCallApp.swift */,
+				A407B68B2B5CD4A0008405B6 /* Models */,
+				A407B68A2B5CD499008405B6 /* ViewModels */,
+				A43D43902B5CD4C700D5610D /* API */,
+				A43D43912B5CD4D000D5610D /* Views */,
 				A45FFCB12B5BD35F00592E28 /* Assets.xcassets */,
 				A45FFCB32B5BD35F00592E28 /* Preview Content */,
 			);
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A45FFCB02B5BD35800592E28 /* ContentView.swift in Sources */,
-				A45FFCAE2B5BD35800592E28 /* NetworkCallApp.swift in Sources */,
+				A407B6872B5CD0BA008405B6 /* UserAPI.swift in Sources */,
+				A407B6892B5CD20D008405B6 /* UserViewModel.swift in Sources */,
+				A407B6852B5CCFDF008405B6 /* User.swift in Sources */,
+				A4C4722F2B5CD65600A5ADFE /* UserDetailView.swift in Sources */,
+				A4C4722D2B5CD5AE00A5ADFE /* NetworkCallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
